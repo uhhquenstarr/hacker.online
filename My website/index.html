@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Hacker online</title>
+    </head>
+    
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">HackerOnline</a></li>
+                <li><a href="#">HackerOnline</a></li>
+                <li><a href="#">HackerOnline</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">HackerOnline</a></li>
+                <li class="hideOnMobile"><a href="#">Login</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">HackerOnline</a></li>
+                <li class="hideOnMobile"><a href="#">HackerOnline</a></li>
+                <li class="hideOnMobile"><a href="#">HackerOnline</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="https://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z0"/></path></svg></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        <h1> Hacker Online
+        </h1>
+        <h2 id="para1">well well.. look who's a smarty pants:)</h2>
+        <p1>As you explore these pages, you will find that all is as it seems. There are absoulty NO secrets along the path you seek. But not all that you wish to seek, may be seen. </p1>
+        
+        <h3 id="demo">You can't resist</h3>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "TOLD YOU!!"'>Click Me!</button>
+<button id="colorButton">Don't Click Me!</button>
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>

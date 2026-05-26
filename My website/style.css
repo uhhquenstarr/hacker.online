@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background-image: url(depositphotos_576813612-stock-illustration-green-matrix-dark-background-different.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    color: #00ff00;
+    text-align: center;
+     margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/* man I've missed coding*/
+h1 {
+    background-color: black;
+    color: #00ff00;
+    text-align: center;
+     border: ridge;
+    border-width: 10px;
+    padding-top: 0%;
+    margin: 40px;
+    font-size: 75px;
+}
+h2, para1 {
+    color:rgb(2, 2, 2);
+    padding: 20px;
+    margin: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+button { 
+  background:#04AA6D; 
+  color: white; 
+  border:none; 
+  padding:12px 24px; 
+  border-radius:999px; 
+  cursor: pointer;
+}
+button:hover { 
+  background:#028a56; 
+}
+nav{
+    background-color: black;
+    box-shadow: 3px 3px 5px rgba(0,0,0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height:100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: darkgrey;
+}
+nav a:hover{
+    background-color: darkgreen;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+    
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
